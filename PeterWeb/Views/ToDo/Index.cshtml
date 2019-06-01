@@ -1,0 +1,75 @@
+﻿@model IEnumerable<PeterWeb.Models.InkopslistaViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Kategori)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Butik)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Antal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Beskrivning)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.inkopt)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Create)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Modified)
+        </th>*@
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kategori)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Butik)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Antal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Beskrivning)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.inkopt)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Create)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Modified)
+        </td>*@
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

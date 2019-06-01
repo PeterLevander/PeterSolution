@@ -1,0 +1,24 @@
+﻿
+
+--Databas i Azure:-----------------------------------------------------------------------------------
+server:		peterlevander.database.windows.net
+DB namn:	petlevdb (peterlevander/petlevdb)
+Admin login:  	azureuser
+Password:  		Roland1927
+
+DB connection string
+Server=tcp:peterlevander.database.windows.net,1433;Initial Catalog=petlevdb;Persist Security Info=False;User ID={your_username};Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+Server=tcp:peterlevander.database.windows.net,1433;Initial Catalog=petlevdb;Persist Security Info=False;User ID={azureuser};Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+
+-----------------------------------------------------------------------------------------------------
+Todo
+/- skapa connection till Azure database
+/- skapa Module class utifrån databas file
+/- i controller gör anrop mot A´zure db
+- fixa Detail function
+- fixa delete function
+
+-??
+----------------------------------------------------------------------------------------------------
+Cannot open server 'peterlevander' requested by the login. Client with IP address '158.174.92.110' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+---------------------------

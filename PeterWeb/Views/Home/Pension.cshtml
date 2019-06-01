@@ -1,0 +1,58 @@
+﻿@model PeterWeb.Models.Pension
+
+@{
+    ViewBag.Title = "Pension";
+}
+
+<h2>Hur lång tid kvar till min Pension</h2>
+
+<div>
+    <h4>Penson</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MyEndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MyEndDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MonthsLeft)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MonthsLeft)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WeeksLeft)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WeeksLeft)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DaysLeft)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DaysLeft)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HouresLeft)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HouresLeft)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |*@
+    @Html.ActionLink("Back to List", "Index")
+</p>
